@@ -26,6 +26,7 @@ Defaults, tuned for dark backgrounds:
 | separator | cyan | `45` |
 | path | bright white | `231` |
 | `$` / `#` | light blue | `75` |
+
 ![](./images/1.png)
 
 Contrast against pure black: green 10.7:1, blue 9.1:1, cyan 12.2:1, white 21:1 — all well above WCAG AA.
