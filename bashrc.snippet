@@ -1,0 +1,29 @@
+# >>> oh-my-bash kali prompt >>>
+# Loaded by ~/.bashrc. Only affects interactive bash.
+export OSH="$HOME/.oh-my-bash"
+DISABLE_AUTO_UPDATE=true
+OSH_THEME="kali"
+plugins=()
+
+# Optional color overrides (256-color indexes)
+KALI_PROMPT_BORDER_COLOR=40
+KALI_PROMPT_ACCENT_COLOR=75
+KALI_PROMPT_PATH_COLOR=231
+KALI_PROMPT_MARK_COLOR=75
+KALI_PROMPT_SEP_COLOR=45
+KALI_PROMPT_HOST_SEP='@'
+KALI_PROMPT_BOLD=1
+
+source "$OSH/oh-my-bash.sh"
+
+# Oh My Bash ships its own ls/grep/ll/cd aliases. Restore the distro ones so
+# existing habits keep working. Remove this block if you prefer OMB's versions.
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+unalias cd 2>/dev/null
+# <<< oh-my-bash kali prompt <<<
